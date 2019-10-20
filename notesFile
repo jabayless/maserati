@@ -1,0 +1,21 @@
+n git terminal
+1.)ssh-keygen -t rsa -b 4096 -C "yourEmail@gmail.com"
+(password is maserati)
+2.)eval $(ssh-agent -s)
+3.) ssh-add ~/.ssh/id_rsa
+
+4.)clip <~/.ssh/id_rsa.pub
+
+5.)do a git clone (copy the ssh keyword from the git clone on the website)
+
+To send a code change up
+Type git status to see which code you modified
+git commit -m”type your message describing your code”
+git add <your file name> (if you don’t know, type git status)
+git push
+You should be able to see you code changes on git’s website
+
+Pushing branch to master:
+git push origin +master:branch_name
+ 
+
