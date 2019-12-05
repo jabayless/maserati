@@ -1,0 +1,5 @@
+#!/bin/bash
+y=$(mpg321 stop.mp3)
+GO=$y
+echo $GO
+exec bash
