@@ -39,10 +39,16 @@ void loop(){
   }
   
   if (sensorState && !lastState) {
-    Serial.println("Unbroken");
+    Serial.printf("Unbroken\n");
   } 
   if (!sensorState && lastState) {
-    Serial.println("Broken");
+    Serial.printf("Broken\n");
   }
   lastState = sensorState;
+}
+
+int main(int argc, char *argv[]) {
+  const char *file = "java";
+  const char *arg = "-cp . com.sendemail.SendMail1.java";
+  execlp(file, arg, (char*) NULL);
 }
