@@ -2,6 +2,8 @@
   IR Breakbeam sensor demo!
 */
 
+#include <stdio.h>
+
 #define LEDPIN 13
   // Pin 13: Arduino has an LED connected on pin 13
   // Pin 11: Teensy 2.0 has the LED on pin 11
